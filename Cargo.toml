@@ -1,0 +1,14 @@
+[package]
+authors = ["Andrew Merenbach <andrew@merenbach.com>"]
+edition = "2021"
+name = "repetend"
+version = "0.1.0"
+
+[workspace]
+members = [
+  "repeating_decimals",
+]
+
+[dependencies]
+clap = {version = "3.1.5", features = ["derive", "cargo"]}
+repeating_decimals = {path = "repeating_decimals"}
